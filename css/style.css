@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Notable&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    list-style: none;
+}
+body{
+    background: linear-gradient(45deg,#dd0b23,#705ef7,#23d5ab);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: color 15s ease-in-out infinite;
+    padding-top: 70px;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 9999;
+}
+header .container{
+    overflow: hidden;
+    background-color: #080808;
+    box-shadow: 0px 10px 20px #080808b7;
+    border-bottom: 1px solid #9190901c;
+}
+header .container .sett{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+header .container .sett button a{
+    color: #fff;
+}
+header .container .sett a{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #efefefd2;
+}
+header .container .sett .open-sidebar-button i{
+    color: #efefefd2;
+    font-size: 35px;
+    transition: 0.5s;
+}
+header .container .sett .open-sidebar-button i:hover{
+    color: #fff;
+}
+header .container .sett a:hover{
+    letter-spacing: normal;
+    color: #fff;
+}
+header .container .logo a{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #fff;
+}
+header .container .logo a:hover{
+    letter-spacing: normal;
+}
+header .container nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 0;
+}
+header .container ul .cumo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+header .container ul .cumo li{
+    padding: 20px 0;
+    position: relative;
+}
+header a{
+    text-decoration: none;
+    color: #efefefd2;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+}
+header a:first-of-type{
+    text-decoration: none;
+    color: #efefefd2;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+}
+header a:hover{
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.cumo .tran::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 0px;
+    background-color: #1442da;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.cumo .tran:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+main .container{
+    background-color: #080808;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 10px 50px #000;
+    border-bottom: 1px solid #9190901c;
+}
+main .J4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 0px;
+    display: grid;
+}
+main .J4 .image{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+main .J4 .image img{
+    width: 100%;
+    object-fit: cover;
+}
+main .J4 .text{
+    width: 100%;
+}
+main .J4 .text h2{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0px 0 40px 0;
+}
+main .J4 .text p{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 0px;
+    color: #efefefcc;
+    padding-bottom: 30px;
+}
+.gombok{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .J4 .text .fontos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px
+}
+
+main .J4 .text .gombok .Sizes{
+    font-family: "Abel", sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    float: inline-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(-100%);
+    transition: 1s;
+    transition-duration: .5s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.image{
+    transition-delay: 500ms;
+}
+
+main .container:nth-of-type(2) {
+    justify-content: center;
+    padding: 15px;
+}
+main .container:nth-of-type(2) .sales{
+    background-color: #efefef;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 0px 200px 60px 200px;
+    margin: 0;
+}
+/*font-family: "Orbitron", sans-serif;font-family: "Notable", serif;*/
+main .container:nth-of-type(2) .sales a{
+    color: #080808;
+    text-decoration: none;
+    font-family: "Notable", serif;
+    font-size: 200px;
+    transition: all 500ms;
+    text-shadow: 20px 0px 20px #080808b7;
+    font-style: normal;
+}
+main .container:nth-of-type(2) .sales a:hover{
+    color: #080808e1;
+    letter-spacing: 10px;
+}
+footer .container:first-of-type{
+    background-color: #080808;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 50px #000;
+    border-top: 1px solid #9190901c;
+    padding: 60px;
+}
+footer .container:last-of-type{
+    background-color: #080808;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 50px #000;
+    border-top: 1px solid #9190901c;
+    padding: 20px;
+}
+footer .container:last-of-type p{
+    margin: 0;
+}
